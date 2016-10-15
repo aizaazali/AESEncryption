@@ -7,7 +7,6 @@ from Crypto.Cipher import AES
 
 # Encryption
 aes_enc = AES.new('This key is used',AES.MODE_CFB,'This is the IV12')
-
 block_text="first block1 ecbsecond block ecbfirst block1 ecbfourth block ecbfirst block1 ecb"
 #Convert to cipher text
 cipher_text = aes_enc.encrypt(block_text)
@@ -27,7 +26,7 @@ print(plain_text)
 
 # Decryption after modifying firstbit of second block of ciphertext
 cipher_text_new='2b0d24158d4e13ccba39fa1001b6f686959ac2c7c54ef8701a9022fe56191e668cff3b40d6e37bd5c079b153ed050b5086f87c1d2b63e57638d16e85cee01a649a80fe090178d079dc745cae4cc1137a'
-#Decode to hex
+#Decode hex format
 decoded_cipher=cipher_text_new.decode('hex')
 #Convert to plaintext
 plain_text_new = aes_dec.decrypt(decoded_cipher)
