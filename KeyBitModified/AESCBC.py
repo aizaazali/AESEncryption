@@ -8,7 +8,6 @@ from Crypto.Cipher import AES
 
 # Encryption
 aes_enc = AES.new('This key is used',AES.MODE_CBC,'This is the IV12')
-
 block_text="first block1 ecbsecond block ecbfirst block1 ecbfourth block ecbfirst block1 ecb"
 #Converted to ciphertext
 cipher_text = aes_enc.encrypt(block_text)
@@ -28,7 +27,7 @@ print(plain_text)
 
 # Decryption using new key
 aes_dec_new = AES.new('Dhis key is used', AES.MODE_CBC,'This is the IV12')
-#Converted to plaintext
+#Convert to plaintext using new key
 plain_text_new = aes_dec_new.decrypt(cipher_text)
 print('decrypted message with new key:') 
 print(plain_text_new)
