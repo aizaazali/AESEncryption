@@ -11,7 +11,7 @@ aes_enc = AES.new('This key is used',AES.MODE_ECB)
 block_text="first block1 ecbsecond block ecbfirst block1 ecbfourth block ecbfirst block1 ecb"
 #Convert to ciphertext
 cipher_text = aes_enc.encrypt(block_text)
-#Convert to hex
+#Convert to hex format
 encoded_cipher=cipher_text.encode('hex')
 print('encrypted message:')
 print(encoded_cipher)
@@ -27,7 +27,7 @@ print(plain_text)
 
 #Decryption using new key
 aes_dec_new = AES.new('Dhis key is used', AES.MODE_ECB)
-#Convert to plaintext
+#Convert to plaintext using new key
 plain_text_new = aes_dec_new.decrypt(cipher_text)
 print('decrypted message with new key:') 
 print(plain_text_new)
