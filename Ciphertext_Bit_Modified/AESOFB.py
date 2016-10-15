@@ -27,7 +27,7 @@ print(plain_text)
 
 # Decryption after modifying firstbit of second block of ciphertext
 cipher_text_new='2bfa77a98058f7c3dc7080a9165e24814617e791c67e93fae7ff1ccf5a185f2fc1910d8bc93019ddd4e1b9a30e314d408294f89ffd045b6d31b8850869b75f024b5953a23841e38af913772ebfd8fe76'
-#Decode to hex
+#Decode to hex format
 decoded_cipher=cipher_text_new.decode('hex')
 #Convert to plaintext
 plain_text_new = aes_dec.decrypt(decoded_cipher)
