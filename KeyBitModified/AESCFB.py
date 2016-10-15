@@ -11,7 +11,7 @@ aes_enc = AES.new('This key is used',AES.MODE_CFB,'This is the IV12')
 block_text="first block1 ecbsecond block ecbfirst block1 ecbfourth block ecbfirst block1 ecb"
 #Converted to ciphertext
 cipher_text = aes_enc.encrypt(block_text)
-#Converted to hex
+#Converted to hex format
 encoded_cipher=cipher_text.encode('hex')
 print('encrypted message:')
 print(encoded_cipher)
