@@ -26,7 +26,7 @@ print(plain_text)
 #Decryption after changing one bit of 2nd ciphertext block
 aes_dec_new = AES.new('This key is used', AES.MODE_ECB)
 cipher_text_new='600a6e8066ab090007aa11eec076a0dda0f7a22622c0ed276a342e69224b9178600a6e8066ab090007aa11eec076a0ddd281b4e264fd2b5ec448e06889144ae4600a6e8066ab090007aa11eec076a0dd'
-#Decode to hex
+#Decode hex format
 decoded_cipher=cipher_text_new.decode('hex')
 #Convert to plaintext
 plain_text_new = aes_dec_new.decrypt(decoded_cipher)
