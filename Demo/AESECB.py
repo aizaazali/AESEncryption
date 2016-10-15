@@ -1,5 +1,6 @@
-#Key: "This key is used"
-#Text: (contains 5 blocks) "first block1 ecbsecond block ecbfirst block1 ecbfourth block ecbfirst block1 ecb"
+#Key: "This key is used" (16 bytes)
+#Text: (contains 5 blocks) "first block1 ecbsecond block ecbfirst block1 ecbfourth block ecbfirst block1 ecb" (80 bytes)
+#The 1,3 and 5 blocks in the text are same
 
 from Crypto.Cipher import AES
 
