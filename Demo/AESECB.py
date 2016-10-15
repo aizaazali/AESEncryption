@@ -6,7 +6,6 @@ from Crypto.Cipher import AES
 
 # Encryption
 aes_enc = AES.new('This key is used',AES.MODE_ECB)
-
 block_text="first block1 ecbsecond block ecbfirst block1 ecbfourth block ecbfirst block1 ecb"
 #Converted to ciphertext
 cipher_text = aes_enc.encrypt(block_text)
